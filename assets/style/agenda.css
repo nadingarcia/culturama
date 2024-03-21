@@ -1,0 +1,26 @@
+.agenda__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+}
+
+.agenda__item {
+    width: 259px;
+    max-width: 400px;
+    flex-grow: 1;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+}
+
+.agenda__item img {
+    grid-column: 1/3;
+}
+
+@media screen and (min-width: 720px) {
+    .agenda {
+        justify-content: end;
+    }
+}

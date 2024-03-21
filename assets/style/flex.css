@@ -1,0 +1,52 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  
+}
+
+.diviMenu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__titulo {
+    margin-top: 2rem;
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.rodape__logo {
+    align-self: flex-end;
+} 
+
+@media(min-width: 720px){
+    .menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 40%;
+    }
+
+    .diviMenu {
+        gap: 15%;
+    }
+
+    .menu__titulo {
+        margin-top: 0;
+    }
+}
+
+@media(min-width: 1438px) {
+    .menu {
+        column-gap: 23%;
+        flex-wrap: nowrap;
+    }
+}
